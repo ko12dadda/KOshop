@@ -57,6 +57,72 @@
     <h1>Get Your Free $100 PS5 Gift Card!</h1>
     <p>Complete a short task to unlock your code. Limited time only!</p>
     <a href="https://example.com" class="button">Claim Your Reward</a>
+<div id="comment-box" style="max-width: 400px; margin: 20px auto; padding: 10px; font-family: sans-serif;">
+  <ul id="comment-list" style="list-style: none; padding: 0; margin: 0;"></ul>
+</div>
+
+<script>
+  const comments = [
+    "✅ John from Texas just received a $50 PS5 Gift Card!",
+    "🔥 Jessica: ‘I can't believe this worked 😍’",
+    "🎉 Mike unlocked his reward in 2 minutes!",
+    "🔒 Ashley: ‘Super easy and no credit card needed!’",
+    "👏 Chris just completed 1 offer and claimed his gift!",
+    "💬 Emily: ‘So cool! I got mine instantly 🙌’",
+    "🚀 Brandon from California just grabbed his PS5 code!",
+    "🎁 Sarah: 'Best reward site ever, thanks guys!'",
+    "⚡ Kevin: 'Took me 3 mins, totally worth it!'",
+    "✅ Amanda got her code while chilling at Starbucks ☕",
+    "🎮 David: ‘Legit site, no joke. Got my PS5 gift!’",
+    "🎊 Nicole: ‘Wasn't sure at first, but it worked!’"
+  ];
+
+  function getRandomComments(num = 5) {
+    const shuffled = comments.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  }
+
+  function renderComments() {
+    const commentList = document.getElementById("comment-list");
+    commentList.innerHTML = "";
+    const selected = getRandomComments();
+
+    selected.forEach(comment => {
+      const li = document.createElement("li");
+      li.textContent = comment;
+      li.style.background = "#f1f1f1";
+      li.style.marginBottom = "10px";
+      li.style.padding = "10px 15px";
+      li.style.borderRadius = "20px";
+      li.style.boxShadow = "0 2px 4px rgba(0,0,0,0.1)";
+      li.style.maxWidth = "90%";
+      li.style.wordWrap = "break-word";
+      li.style.transition = "all 0.3s ease";
+      li.style.opacity = "0.9";
+      li.style.fontSize = "14px";
+
+      // Random alignment left/right
+      if (Math.random() > 0.5) {
+        li.style.background = "#e0f7fa";
+        li.style.marginLeft = "auto";
+        li.style.textAlign = "right";
+      } else {
+        li.style.background = "#e8f5e9";
+        li.style.marginRight = "auto";
+        li.style.textAlign = "left";
+      }
+
+      commentList.appendChild(li);
+    });
+  }
+
+  renderComments();
+  setInterval(renderComments, 3000); // كل 2 ثواني الكومنتات كيتبدلو
+</script>
+
+
+
+    
   </div>
 </body>
 </html>
