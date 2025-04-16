@@ -1,133 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free PS5 Gift Card</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #1e1e2f, #3b3b58);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .container {
-      max-width: 400px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    }
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
-    h1 {
-      font-size: 24px;
-      margin: 20px 0 10px;
-    }
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    a.button {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-    }
-    a.button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="ps5.jpg" alt="PS5 Gift Card">
-    <h1>Get Your Free $100 PS5 Gift Card!</h1>
-    <p>Complete a short task to unlock your code. Limited time only!</p>
-    <a href="https://example.com" class="button">Claim Your Reward</a>
-<div id="comment-box" style="max-width: 400px; margin: 20px auto; padding: 10px; font-family: sans-serif;">
-  <ul id="comment-list" style="list-style: none; padding: 0; margin: 0;"></ul>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PS5 Gift Card Reward</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #1a1a1a, #333);
+        color: #fff;
+        text-align: center;
+      }
 
-<div id="tiktok-comments" style="position: relative; height: 200px; overflow: hidden; max-width: 400px; margin: 20px auto; background-color: #1c1c1e; border-radius: 10px; padding: 10px;">
-</div>
+      .container {
+        padding: 30px 20px;
+      }
 
-<!-- TikTok-style Comments -->
-<div id="tiktok-comments" style="position: relative; height: 200px; overflow: hidden; max-width: 8BQAzQwVETtFWGmAFZjAwNSYA7M4EczfocpPa2kZ6AiC1tVQuAhJTRjLG5Nkk4QqFWHxiKBdi6RuUFjC5zMhvhUyK7tatMA: 10px;">
-</div>
+      .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
 
-<script>
-  const tiktokComments = [
-   "🔥 Jessica: Just got my PS5 code!",
-    "✅ John from Texas received his reward!",
-    "💬 Mike: Super fast and easy to use 🙌",
-    "🎁 Ashley: Love this site, 100% legit!",
-    "⚡ Brandon: Took only 2 minutes 😎",
-    "🎉 Sarah: Got my code at Starbucks ☕",
-    "🚀 Kevin: Didn't believe it at first, but it works!",
-    "👏 Emily: Just finished 1 offer and claimed mine!",
-    "🎮 Nicole: I’m ready to game now! 🔥"
-  ];
+      .subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #ccc;
+      }
 
-  function createCommentBubble(text) {
-    const div = document.createElement("div");
-    div.textContent = text;
-    div.style.background = "rgba(44, 44, 46, 0.7)";
-    div.style.color = "#fff";
-    div.style.padding = "8px 14px";
-    div.style.borderRadius = "20px";
-    div.style.marginBottom = "8px";
-    div.style.maxWidth = "90%";
-    div.style.opacity = "0";
-    div.style.transform = "translateY(20px)";
-    div.style.transition = "all 0.5s ease";
-    div.style.fontSize = "14px";
-    div.style.wordBreak = "break-word";
-    return div;
-  }
+      .cta-button {
+        background-color: #ff3c3c;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
 
-  function showNextComment(index = 0) {
-    const container = document.getElementById("tiktok-comments");
-    const comment = createCommentBubble(tiktokComments[index % tiktokComments.length]);
-    container.appendChild(comment);
+      .cta-button:hover {
+        background-color: #e13232;
+      }
 
-    // Animate appearance
-    setTimeout(() => {
-      comment.style.opacity = "1";
-      comment.style.transform = "translateY(0)";
-    }, 100);
+      #gift-card-image {
+        max-width: 80%;
+        margin-bottom: 30px;
+        border-radius: 15px;
+      }
 
-    // Remove after a while
-    setTimeout(() => {
-      comment.style.opacity = "0";
-      comment.style.transform = "translateY(-20px)";
-      setTimeout(() => container.removeChild(comment), 500);
-    }, 3500);
-    
-    // Show next comment
-    setTimeout(() => showNextComment(index + 1), 2000);
-  }
+      #tiktok-comments {
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        max-width: 400px;
+        margin: 30px auto 10px auto;
+        background-color: rgba(28, 28, 30, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
 
-  showNextComment();
-</script>
+      .comment-bubble {
+        display: flex;
+        align-items: center;
+        background: rgba(44, 44, 46, 0.9);
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin-bottom: 8px;
+        max-width: 90%;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease;
+        font-size: 14px;
+        word-break: break-word;
+      }
 
+      .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
 
+      @media screen and (max-width: 480px) {
+        .title {
+          font-size: 22px;
+        }
 
+        .subtitle {
+          font-size: 16px;
+        }
 
+        .cta-button {
+          font-size: 16px;
+          padding: 12px 25px;
+        }
 
-    
-  </div>
-</body>
+        #tiktok-comments {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Add the image here -->
+      <img id="gift-card-image" src="ps5.jpg" alt="PS5 Gift Card" />
+
+      <h1 class="title">Win a FREE PS5 Gift Card</h1>
+      <p class="subtitle">Limited Time Offer – Act Fast!</p>
+      <button class="cta-button" onclick="window.location.href='https://your-content-locker-link.com'">
+        Claim Now
+      </button>
+
+      <!-- TikTok-style Comments -->
+      <div id="tiktok-comments"></div>
+    </div>
+
+    <script>
+      const tiktokComments = [
+        { text: "🔥 Jessica: Just got my PS5 code!", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
+        { text: "✅ John from Texas received his reward!", avatar: "https://randomuser.me/api/portraits/men/1.jpg" },
+        { text: "💬 Mike: Super fast and easy to use 🙌", avatar: "https://randomuser.me/api/portraits/men/2.jpg" },
+        { text: "🎁 Ashley: Love this site, 100% legit!", avatar: "https://randomuser.me/api/portraits/women/2.jpg" },
+        { text: "⚡ Brandon: Took only 2 minutes 😎", avatar: "https://randomuser.me/api/portraits/men/3.jpg" },
+        { text: "🎉 Sarah: Got my code at Starbucks ☕", avatar: "https://randomuser.me/api/portraits/women/3.jpg" },
+        { text: "🚀 Kevin: Didn't believe it at first, but it works!", avatar: "https://randomuser.me/api/portraits/men/4.jpg" },
+        { text: "👏 Emily: Just finished 1 offer and claimed mine!", avatar: "https://randomuser.me/api/portraits/women/4.jpg" },
+        { text: "🎮 Nicole: I’m ready to game now! 🔥", avatar: "https://randomuser.me/api/portraits/women/5.jpg" }
+      ];
+
+      function createCommentBubble(comment) {
+        const div = document.createElement("div");
+        div.classList.add("comment-bubble");
+
+        // Create avatar
+        const avatar = document.createElement("img");
+        avatar.classList.add("avatar");
+        avatar.src = comment.avatar;
+        div.appendChild(avatar);
+
+        // Create text
+        const text = document.createElement("span");
+        text.textContent = comment.text;
+        div.appendChild(text);
+
+        return div;
+      }
+
+      function showNextComment(index = 0) {
+        const container = document.getElementById("tiktok-comments");
+        const comment = createCommentBubble(tiktokComments[index % tiktokComments.length]);
+        container.appendChild(comment);
+
+        // Animate appearance
+        setTimeout(() => {
+          comment.style.opacity = "1";
+          comment.style.transform = "translateY(0)";
+        }, 100);
+
+        // Remove after a while
+        setTimeout(() => {
+          comment.style.opacity = "0";
+          comment.style.transform = "translateY(-20px)";
+          setTimeout(() => container.removeChild(comment), 500);
+        }, 3500);
+
+        // Show next comment
+        setTimeout(() => showNextComment(index + 1), 2000);
+      }
+
+      showNextComment();
+    </script>
+  </body>
 </html>
