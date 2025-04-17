@@ -7,10 +7,15 @@
     <style>
       body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to bottom, #1a1a1a, #333);
-        color: #fff;
-        text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #1e1e2f, #3b3b58);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
       }
 
       .container {
@@ -20,14 +25,21 @@
       .title {
         font-size: 28px;
         margin-bottom: 10px;
-      }
+      } 
+      
+      
+      img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
 
       .subtitle {
         font-size: 18px;
         margin-bottom: 30px;
         color: #ccc;
       }
-
+    
       .cta-button {
         background-color: #ff3c3c;
         color: #fff;
@@ -79,6 +91,15 @@
         font-size: 14px;
         word-break: break-word;
       }
+      a.button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block; }
 
       .avatar {
         width: 30px;
@@ -123,7 +144,7 @@
       <div id="tiktok-comments"></div>
     </div>
 
- <script>
+    <script>
       const tiktokComments = [
         { text: "🔥 Jessica: Just got my PS5 code!", avatar: "https://randomuser.me/api/portraits/women/1.jpg" },
         { text: "✅ John from Texas received his reward!", avatar: "https://randomuser.me/api/portraits/men/1.jpg" },
